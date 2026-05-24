@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login </title>
+    </head>
+    <body class="login-system-side">
+        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+
+    <nav>
+        <a href="/forside">forside</a>
+        <a href="/login">Login</a>
+        <a href="/mad">Mad</a>
+        <a href="/om-os">Om os</a>
+        <a href="/MissionVision">Mission og Vision</a>
+        <a href="/verdensmaal">FN's Verdensmål</a>
+    </nav>
+
+    <section class="hero">
+        <div class="login-card">
+            <h1>Login</h1>
+            <p>Log ind for at få adgang til vagter og brugerfunktioner.</p>
+
+            <form method="POST">
+                <label>Brugernavn</label>
+                <input type="text" name="brugernavn" placeholder="Indsæt brugernavn" required>
+
+                <label>Kode</label>
+                <input type="password" name="kode" placeholder="Indsæt kode" required>
+
+                <input type="submit" value="Login" class="btn form-btn">
+            </form>
+            <button type="button" onclick="window.location.href='/opret'" class="btn"> Opret bruger 
+            </button>
+            <button type="button" onclick="window.location.href='/forside'" class="back-btn">
+                Tilbage til forsiden
+            </button>
+        </div>
+    </section>
+
+</button>
+    </body>
+</html>

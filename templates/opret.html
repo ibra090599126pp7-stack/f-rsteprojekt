@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oprettelse af bruger</title>
+    </head>
+    <body   class="opret-side">
+        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+
+<section class="hero">
+    <div class="login-card">
+        <h1>Opret bruger</h1>
+        <p>Opret en konto for at få adgang til vores tjenester og funktioner.</p>
+
+        <form method="POST">
+            <label>Indsæt brugernavn:</label>
+            <input type="text" name="brugernavn" placeholder="Indsæt brugernavn" required>
+
+            <label>Indtast adgangskode:</label>
+            <input type="password" name="kode" placeholder="Indtast din adgangskode" required>
+
+            <label>Indtast navn:</label>
+            <input type="text" name="navn" placeholder="Indtast dit navn" required>
+
+            <label>Indtast e-mail:</label>
+            <input type="email" name="email" placeholder="Indtast din e-mail" required>
+
+            <label>Indtast by:</label>
+            <input type="text" name="city" placeholder="Indtast dit bynavn" required>
+
+            <label>Indtast telefonnummer:</label>
+            <input type="tel" name="phone" placeholder="Dit telefonnummer" required>
+
+            <input type="submit" value="Opret bruger" class="btn form-btn">
+        </form>
+
+        <button type="button" onclick="window.location.href='/login'" class="btn back-btn">
+            Tilbage til login
+        </button>
+    </div>
+</section>
+    </body>
+    

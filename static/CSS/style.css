@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    background-image: url("../Images/forside-bg.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+nav {
+    background: rgba(43, 83, 50, 0.72);
+    backdrop-filter: blur(12px);
+    padding: 22px 45px;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+.mad-side {
+    background-image: url("../Images/sundt mad.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.verdensmaal-side {
+    background-image: url("../Images/verdensmaal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.hero {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #f4a261;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e76f51;
+    transform: scale(1.05);
+}
+.forside-side {
+    background-image: url("../Images/forside-bg.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-side {
+    background: linear-gradient(135deg, #2f5d3a, #8aaa7f);
+}
+
+.omos-side {
+    background-image: url("../Images/om-os-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission-side {
+    background: linear-gradient(135deg, #6b4f3f, #2f5d3a);
+}
+
+.verdensmaal-side {
+    background-image: url("../Images/verdensmaal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.login-system-side {
+    background: linear-gradient(135deg, #2f5d3a, #8aaa7f);
+}
+
+.login-card {
+    width: 380px;
+    padding: 35px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    color: white;
+}
+
+.login-card h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.login-card p {
+    margin-bottom: 25px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-card input {
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.form-btn {
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.25);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
