@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body class="opret.side">
+
+    <nav>
+        <a href="/forside">forside</a>
+        <a href="/mad">Mad</a>
+        <a href="/om-os">Om os</a>
+        <a href="/MissionVision">Mission og Vision</a>
+        <a href="/verdensmaal">FN's Verdensmål</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="login-card">
+                <h1>Vælg din vagt</h1>
+                <p>Indtast hvornår du ønsker at arbejde.</p>
+
+                <form method="POST">
+                    <label>Dato</label>
+                    <input type="date" name="dato" required>
+
+                    <label>Starttid</label>
+                    <input type="time" name="starttid" required>
+
+                    <label>Sluttid</label>
+                    <input type="time" name="sluttid" required>
+
+                    <input type="submit" value="Gem vagt" class="btn form-btn">
+                </form>
+
+                <a href="/forside" class="btn form-btn">Log ud</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

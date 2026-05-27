@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Login </title>
-    </head>
-    <body class="login-system-side">
-        <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body class="opret.side">
 
     <nav>
         <a href="/forside">forside</a>
@@ -15,28 +17,28 @@
         <a href="/verdensmaal">FN's Verdensmål</a>
     </nav>
 
-    <section class="hero">
-        <div class="login-card">
-            <h1>Login</h1>
-            <p>Log ind for at få adgang til vagter og brugerfunktioner.</p>
+            <section class="hero">
+            <div class="hero-content">
+            <div class="login-card">
+                <h1>Login</h1>
+                <p>Log ind for at få adgang til vagter og brugerfunktioner.</p>
 
-            <form method="POST">
-                <label>Brugernavn</label>
-                <input type="text" name="brugernavn" placeholder="Indsæt brugernavn" required>
+                <form method="POST">
+                    <label>Brugernavn</label>
+                    <input type="text" name="brugernavn" placeholder="Indsæt brugernavn" required>
 
-                <label>Kode</label>
-                <input type="password" name="kode" placeholder="Indsæt kode" required>
+                    <label>Kode</label>
+                    <input type="password" name="kode" placeholder="Indsæt kode" required>
 
-                <input type="submit" value="Login" class="btn form-btn">
-            </form>
-            <button type="button" onclick="window.location.href='/opret'" class="btn"> Opret bruger 
-            </button>
-            <button type="button" onclick="window.location.href='/forside'" class="back-btn">
-                Tilbage til forsiden
-            </button>
-        </div>
-    </section>
+                    <input type="submit" value="Login" class="btn form-btn">
+                </form>
 
-</button>
-    </body>
+               
+                <a href="/opret" class="btn form-btn">Opret bruger</a>
+
+            </div>
+            </div>
+            </section>
+
+</body>
 </html>
