@@ -2,33 +2,52 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
 </head>
-<body>
-    <h1>Vagter</h1>
+<body class="opret.side">
 
-    <table border="1" cellpadding="6">
-        <tr>
-            <th>ID</th>
-            <th>Fornavn</th>
-            <th>Efternavn</th>
-            <th>Dato</th>
-            <th>Starttid</th>
-            <th>Sluttid</th>
-        </tr>
-        {% for v in vagter %}
-        <tr>
-            <td>{{ v[0] }}</td>
-            <td>{{ v[1] }}</td>
-            <td>{{ v[2] }}</td>
-            <td>{{ v[3] }}</td>
-            <td>{{ v[4] }}</td>
-            <td>{{ v[5] }}</td>
-        </tr>
-        {% endfor %}
-    </table>
+    <nav>
+        <a href="/forside">Forside</a>
+        <a href="/login">Login</a>
+        <a href="/mad">Mad</a>
+        <a href="/om-os">Om os</a>
+        <a href="/MissionVision">Mission og Vision</a>
+        <a href="/verdensmaal">FN's Verdensmål</a>
+    </nav>
 
-    <br>
-    <a href="/Forside">Log ud</a>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="login-card">
+                <h1>Vagter</h1>
+                <p>Her kan du se de planlagte vagter i databasen.</p>
+
+                <table border="1" cellpadding="6" style="width: 100%; border-collapse: collapse; color: white;">
+                    <tr style="background: rgba(244, 162, 97, 0.4);">
+                        <th>ID</th>
+                        <th>Fornavn</th>
+                        <th>Efternavn</th>
+                        <th>Dato</th>
+                        <th>Starttid</th>
+                        <th>Sluttid</th>
+                    </tr>
+                    {% for v in vagter %}
+                    <tr style="border: 1px solid rgba(255,255,255,0.2);">
+                        <td>{{ v[0] }}</td>
+                        <td>{{ v[1] }}</td>
+                        <td>{{ v[2] }}</td>
+                        <td>{{ v[3] }}</td>
+                        <td>{{ v[4] }}</td>
+                        <td>{{ v[5] }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+                <a href="/Forside" class="btn form-btn">Log ud</a>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
