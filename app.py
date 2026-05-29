@@ -48,10 +48,9 @@ def init_db():
 init_db()
 
 @app.route('/')
-@app.route('/Forside')
 @app.route('/forside')
 def home():
-    return render_template('Forside.html')
+    return render_template('forside.html')
 
 @app.route('/mad')
 def mad():
